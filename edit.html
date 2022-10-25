@@ -54,9 +54,9 @@
                 <div>
                     <button class="btn btn-primary m-5 p-5" type="button" onclick="patchRequest()">Update</button>
                 </div>
-                <div>
+                <!-- <div>
                     <button class="btn btn-primary m-5 p-5" type="button" onclick="putRequest()">Replace</button>
-                </div>
+                </div> -->
                 <div>
                     <button class="btn btn-primary m-5 p-5" type="button" onclick="deleteRequest()">Delete</button>
                 </div>
@@ -66,7 +66,8 @@
 
         <div class="content-wrapper" id="contentWrapper">
             <div class="d-flex flex-column m-10 p-15">
-                <h2>FORMULARIO DE CREACION DE UNA NUEVA MOTO</h2>
+                <h2>FORMULARIO DE ACTUALIZACIÓN DE UNA NUEVA MOTO CON ID:
+                </h2>
                 <form class="w-400 mw-full" enctype="multipart/form-data" id="nuevaMoto">
                     <!-- Input -->
                     <div class="form-group">
@@ -111,7 +112,7 @@
                         <label for="color" class="required">COLOR</label>
                         <input type="text" class="form-control" id="color" placeholder="color" required="required">
                     </div>
-                    <button class="btn btn-primary m-5 p-5" type="button" onclick="postRequest()">GUARDAR</button>
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="getId()">ACTUALIZAR</button>
 
                 </form>
                 <br>
