@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axios consuming Laravel API REST Demo</title>
+    <!-- Halfmoon CSS -->
+    <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Page wrapper with navbar, sidebar, and navbar fixed bottom -->
+    <div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom">
+        <!-- Sidebar (immediate child of the page wrapper) -->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <!-- Sidebar brand -->
+                <a href="#" class="sidebar-brand">
+                    <!-- <img src="..." alt="..."> Brand -->
+                </a>
+                <!-- Sidebar content with the search box -->
+                <div class="sidebar-content">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="mt-10 font-size-12">
+                        <!-- mt-10 = margin-top: 1rem (10px), font-size-12 = font-size: 1.2rem (12px) -->
+                        Press <kbd>/</kbd> to focus
+                    </div>
+                </div>
+                <!-- Sidebar links and titles -->
+                <h5 class="sidebar-title">Getting started</h5>
+                <div class="sidebar-divider"></div>
+                <a href="#" class="sidebar-link active">Installation</a>
+                <a href="#" class="sidebar-link">CLI commands</a>
+                <br />
+                <h5 class="sidebar-title">Components</h5>
+                <div class="sidebar-divider"></div>
+                <a href="#" class="sidebar-link">File explorer</a>
+                <a href="#" class="sidebar-link">Spreadsheet</a>
+                <a href="#" class="sidebar-link">Map</a>
+                <a href="#" class="sidebar-link">Messenger</a>
+            </div>
+        </div>
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+            ....
+
+            <!-- Navbar with input group -->
+            <nav class="navbar navbar-fixed-bottom">
+                <!-- Navbar brand -->
+                <a href="#" class="navbar-brand">
+                    <!-- <img src="..." alt="..."> -->
+                </a>
+                <!-- Inline form with input group -->
+                <form class="form-inline ml-auto" action="..." method="...">
+                    <!-- ml-auto = margin-left: auto -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search docs" required="required">
+                        <div class="input-group-append">
+                            <button class="btn" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span class="sr-only">Search docs</span> <!-- sr-only = show only on screen readers -->
+          </button>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+            <!-- CONTENT -->
+            <div>
+                <div>
+                    <button onclick="getAllRequest()">Get All</button>
+                    <input type="number" name="getFilteredParam" id="getFilteredParam">
+                    <button onclick="getFilteredRequest()">Get Filtered by id</button>
+                    <input type="text" name="getByMarcaParam" id="getByMarcaParam">
+                    <button onclick="getByMarca()">Get by Marca</button>
+                    <input type="text" name="getByModeloParam" id="getByModeloParam">
+                    <button onclick="getByModelo()">Get by Modelo</button>
+                    <button onclick="postRequest()">Create</button>
+                </div>
+                <div>
+                    <button onclick="patchRequest()">Update</button>
+                </div>
+                <div>
+                    <button onclick="putRequest()">Replace</button>
+                </div>
+                <div>
+                    <button onclick="deleteRequest()">Delete</button>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <h2 class="content-title">
+                    It was going to rain
+                </h2>
+                <p>
+                    The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare. Sleeping in his car was never the plan but sometimes
+                    things don't work out as planned. This had been his life for the last three months and he was just beginning to get used to it. He didn't actually enjoy it, but he had accepted it and come to terms with it. Or at least he thought he
+                    had. All that changed when he put the key into the ignition, turned it and the engine didn't make a sound.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Halfmoon JS -->
+    <script src="js/halfmoon.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axios consuming Laravel API REST Demo</title>
+    <!-- Halfmoon CSS -->
+    <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Page wrapper with navbar, sidebar, navbar fixed bottom, and sticky alerts (toasts) -->
+    <div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="overlayed-sm-and-down">
+        <!-- Sticky alerts (toasts), empty container -->
+        <div class="sticky-alerts"></div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <h4 class="m-5">CLIENTE API LARAVEL CON AXIOS</h4>
+            <button class="m-5 btn btn-primary" type="button" onclick="toggleDemo()">DARK MODE</button>
+            <!-- Toggle sidebar -->
+            <button class="m-5 btn" type="button" onclick="halfmoon.toggleSidebar()">Toggle sidebar</button>
+        </nav>
+        <!-- Sidebar overlay -->
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()">
+
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- CONTENT -->
+            <div>
+                <div>
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="getAllRequest()">Get All</button>
+                </div>
+                <div>
+                    <input class="form-control m-5 p-5" type="number" name="getFilteredParam" id="getFilteredParam" placeholder="Un id válido">
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="getFilteredRequest()">Get Filtered by id</button>
+                </div>
+                <div>
+                    <input class="form-control m-5 p-5" type="text" name="getByMarcaParam" id="getByMarcaParam" placeholder="MARCA">
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="getByMarca()">Get by Marca</button>
+                </div>
+                <div>
+                    <input class="form-control m-5 p-5" type="text" name="getByModeloParam" id="getByModeloParam" placeholder="MODELO">
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="getByModelo()">Get by Modelo</button>
+                </div>
+                <div>
+                    <a class="btn btn-primary m-5 p-5" type="button" href="create.html">Create LINK</a>
+                </div>
+                <div>
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="postRequest()">Create</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="patchRequest()">Update</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="putRequest()">Replace</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary m-5 p-5" type="button" onclick="deleteRequest()">Delete</button>
+                </div>
+            </div>
+        </div>
+        <!-- Content wrapper -->
+        <div class="content-wrapper d-flex flex-wrap justify-content-center" id="contentWrapper">
+
+        </div>
+        <!-- Navbar fixed bottom -->
+        <nav class="navbar navbar-fixed-bottom">
+            <h4 class="m-10 p-5">
+                ESTE SERÍA EL FOOTER
+            </h4>
+            <h5 class="m-10 p-5">
+                madewithLove...PJR &copy;2022
+            </h5>
+        </nav>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Halfmoon JS -->
+    <script src="js/halfmoon.js"></script>
+    <script type="text/javascript">
+        // Dark mode toggle demo
+        function toggleDemo() {
+            halfmoon.toggleDarkMode();
+        }
+    </script>
+</body>
+
+</html>
